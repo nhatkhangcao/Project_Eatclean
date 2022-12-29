@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:ital@1&display=swap');
+
+* {
+
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+
+
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+}
+
+nav .nav-bar {
+
+    max-width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(233, 237, 231);
+    padding: 0 100px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.nav-bar__logo a {
+    text-decoration: none;
+    color: rgb(81, 173, 11);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.nav-bar__link {
+    list-style: none;
+}
+
+.nav-bar__link li {
+    display: inline-block;
+}
+
+.nav-bar__link li a {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    font-size: 18px;
+    transition: all 0.3s;
+
+}
+
+.nav-bar__link li a:hover {
+    color: rgb(81, 173, 11);
+
+}
+
+.nav-bar__icon {
+    display: flex;
+
+}
+
+.nav-bar__icon .icons {
+    color: black;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.nav-bar__btn {
+    display: none;
+    cursor: pointer;
+}
+
+/* .nav-bar__mobile--close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+} */
+@media (max-width: 1024px) {
+
+    .nav-bar__btn {
+        display: block;
+    }
+
+    .nav-bar__link {
+        position: fixed;
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(213, 216, 212);
+        top: 80px;
+        left: 0;
+        text-align: center;
+        display: none;
+
+
+
+
+    }
+
+    .nav-bar__link li {
+        display: block;
+        margin: 40px 0;
+    }
+
+    .nav-bar__link li a {
+        font-size: 20px;
+
+    }
+
+
+}
