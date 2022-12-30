@@ -113,7 +113,6 @@ class CartController extends Controller
         } else {
             echo json_encode($returnData);
         }
-        // vui lòng tham khảo thêm tại code demo
     }
 
     public function createPayment(Request $request)
